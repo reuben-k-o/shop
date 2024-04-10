@@ -3,15 +3,15 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <Flex justify="space-between">
-      <Box>Logo</Box>
-      <Flex>
-        <List>
+    <Flex border="1px solid green" justify="space-between">
+      <Flex>Logo</Flex>
+      <Flex flexDir="row">
+        <List flexDir="row">
           <ListItem>
-            <Link href="/" title="Home" />
+            <Link href="/">Home</Link>
           </ListItem>
           <ListItem>
-            <Link href="/products" title="Products" />
+            <Link href="/products">Products </Link>
           </ListItem>
         </List>
       </Flex>
